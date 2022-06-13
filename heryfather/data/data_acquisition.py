@@ -1,4 +1,7 @@
 """This module will be used to get data ready
 """
-def get_data():
-    print("Not implemented yet")
+import pandas as pd
+
+def get_data(io):
+    data = pd.read_excel(io)
+    data.info()
